@@ -30,3 +30,9 @@ def single_post_page(request, pk):
             'post':post,
         }
     )
+
+def index(request):
+    return render(
+        request,
+        'blog/post_list.html',
+    )
